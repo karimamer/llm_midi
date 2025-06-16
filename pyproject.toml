@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "llm_midi"
 version = "0.1.0"
-description = ""
+description = "AI-powered MIDI generation using Large Language Models"
 authors = ["kairm amer <karim.amer.sa@gmail.com>"]
+
+[tool.poetry.scripts]
+llm-midi = "llm_midi.cli:main"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -10,7 +13,7 @@ mido = "^1.3.2"
 anthropic = "^0.34.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^7.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
